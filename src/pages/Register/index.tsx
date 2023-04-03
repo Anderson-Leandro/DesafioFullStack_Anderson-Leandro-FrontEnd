@@ -68,6 +68,7 @@ const Register = () => {
 
 						<StyledInput
 							placeholder="Senha"
+							type="password"
 							{...register("password")}
 						/>
 						{errors.password?.message && (
@@ -77,6 +78,7 @@ const Register = () => {
 						)}
 						<StyledInput
 							placeholder="Confirmar Senha"
+							type="password"
 							{...register("passwordConfirmation")}
 						/>
 						{errors.passwordConfirmation?.message && (

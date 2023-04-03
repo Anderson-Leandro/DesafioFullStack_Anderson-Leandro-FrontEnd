@@ -133,13 +133,13 @@ const Modal = () => {
 
 							<StyledInput
 								placeholder="Senha"
-								defaultValue={user?.password}
+								type="password"
 								{...register2("password")}
 							/>
 
 							<StyledInput
 								placeholder="Confirmar senha"
-								defaultValue={user?.password}
+								type="password"
 								{...register2("passwordConfirmation")}
 							/>
 							<StyledButtonDefault type="submit">

@@ -42,6 +42,7 @@ const Home = () => {
 						/>
 						<StyledInput
 							placeholder="Senha"
+							type="password"
 							{...register("password")}
 						/>
 
