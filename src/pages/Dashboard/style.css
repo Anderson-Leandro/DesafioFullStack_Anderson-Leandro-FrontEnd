@@ -1,0 +1,126 @@
+.container {
+	background-color: var(--color-grey-3);
+	width: 90% !important;
+	max-width: 1000px !important;
+	padding: 1rem 1rem !important;
+	margin-top: 2rem !important;
+	border-radius: 0.5rem;
+}
+
+.top_menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 0;
+}
+
+.top_menu input {
+	max-width: 400px;
+}
+
+.top_menu div {
+	background-color: var(--color-grey-2);
+	width: fit-content;
+	margin: 0;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	position: relative;
+}
+
+.top_menu div > div {
+	position: absolute;
+
+	top: -5px;
+	right: 0px;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 1rem;
+	gap: 10px;
+	z-index: 20;
+	background-color: var(--color-grey-3);
+	border-radius: 8px;
+}
+
+div .close {
+	background-color: rgba(205, 37, 37, 0.85);
+	font-size: 20px;
+	color: var(--color-grey-0);
+	padding: 0.5rem 0.8rem;
+	border: none;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.menu {
+	width: 100%;
+	background-color: var(--color-grey-2);
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin: 1rem 0;
+}
+
+.menu button {
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	max-width: 11.25rem;
+}
+
+.teste {
+	background-color: var(--color-grey-2);
+	border-radius: 0.5rem;
+	padding: 1rem;
+}
+
+.lista {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin: 1rem 0;
+}
+
+.lista .head {
+	background-color: var(--color-primary);
+	color: var(--color-grey-0);
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 0.5rem;
+	border-radius: 0.5rem;
+}
+
+.lista .head span {
+	width: 30%;
+}
+.lista .head span + span {
+	width: 35%;
+}
+.lista .head span + span + span {
+	width: 16%;
+}
+.lista .head span + span + span + span {
+	width: fit-content;
+}
+
+@media (max-width: 750px) {
+	.container {
+		margin: 0 !important;
+		width: 100% !important;
+	}
+	.top_menu {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+
+	.menu {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.head {
+		display: none !important;
+	}
+}
