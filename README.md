@@ -1,6 +1,5 @@
 ## Instruções de uso
 
-In the project directory, you can run:
 No diretŕorio do projeto rode:
 
 ### `yarn`
